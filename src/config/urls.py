@@ -22,9 +22,9 @@ from prueba.views import index, notas, tirar_dado, clientes_listar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("prueba/", index),
-    path("notas/", notas ),
-    path("tirar-dado/", tirar_dado),
-    path("clientes/", clientes_listar),
+    path("", index, name="index"),
+    path("notas/", notas, name="notas" ),
+    path("tirar-dado/", tirar_dado, name="dados" ),
+    path("clientes/", clientes_listar, name="clientes_listar"),
 
 ]
